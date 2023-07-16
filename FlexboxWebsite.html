@@ -23,19 +23,51 @@
         margin: 4px 2px;
         font-size: 16px;
         cursor: pointer;
-        color:rgba(255, 0, 17, 0.658)   
+        color:rgba(255, 0, 17, 0.658);
+        border-radius: 8px;  
      }
-     .button {border-radius: 8px;
+     *{
+      box-sizing: border-box;
+     }
+.flex-container2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(233, 229, 229);
+        border: none;
+        padding: 2px 1px;
+        margin: 4px 2px;
+        font-size: 16px;
     }
+  .flex-container2 > div {
+    background-color:gainsboro;
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+  }
+  .card {
+    margin: 8px;
+    padding: 4px;
+    color: gray;
+  }
+  .column {
+    float: left;
+    width:  33.3%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+  }
+  .flex-container3 {
+        display: flex;    
+        background-color:rgba(255, 0, 17, 0.658);
+        padding: 100px;
+        font-size: 16px;
+  }
     </style>
-
-
     </head>
     <body>
     <div class="header">
         <h1>My Flexbox Website</h1>
-    </div>
-    <div class="flex-container">
     </div>
 
    <div class="about-section">
@@ -43,11 +75,41 @@
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing slit. Nullam feugiat elit at augue blandit,sed ultrices orci eleifes.</p>
     <button class="button">Learn More</button>
 </div>
+
    <h2 style="text-align: center">About Me</h2>
-   <p style="text-align: center;">Lorem ipsum dolor sit amet, consectetur elit. Nullam feugiat elit at augue blandit, sed ultrices orci eleifend.</p>
-</div>  
-<h2 style="text-align: left">Services</h2> 
+   <p style="text-align: center">Lorem ipsum dolor sit amet, consectetur elit. Nullam feugiat elit at augue blandit, sed ultrices orci eleifend.</p> 
+
+<div class="flex-container2">
+    <div class="row">
+    <div class="column">
+    <div class="card">
+        <img src="photo.jpg/trees.jpg" style="width: 50%;" class="column">
+        <h6><Service 1</h6>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 </div>
-       
-    </body>
+</div>
+
+    <div class="column">
+    <div class="card"> 
+        <img src="photo.jpg/rock.png" style="width: 50%;" class="column" >
+        <h6>Service 2</h6>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> 
+</div>
+</div>
+
+    <div class="column">
+    <div class="card"> 
+         <img src="photo.jpg/snow.png" style="width: 50%;" class="column">
+         <h6>Service 3</h6>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> 
+       </div>
+     </div>
+   </div>
+  </div> 
+
+  <div class="flex-container3">
+  <h1>   </h1>
+  
+  </div>
+</body>
 </html>
